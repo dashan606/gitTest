@@ -4,3 +4,11 @@
 find . -type d -empty -exec touch {}/.gitignore \;
 给所有的子空目录都添加gitignore文件；
 然后，就提交到远程时远程库就会显示空目录结构。
+
+二、 Git pull 强制覆盖本地文件
+git fetch --all  
+git reset --hard origin/master 
+git pull
+
+
+
